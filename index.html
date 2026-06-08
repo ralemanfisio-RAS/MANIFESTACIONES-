@@ -1,0 +1,3097 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manifestaciones de Maravilla — Dr. Raquel Alemán Sánchez</title>
+<meta name="description" content="Un viaje cósmico a través de los 4 pilares: Abundancia, Salud, Amor y Paz Mental. Experiencia inmersiva de manifestación con audios guiados.">
+<meta property="og:title" content="Manifestaciones de Maravilla">
+<meta property="og:description" content="Viaje cósmico de manifestación a través de los 4 pilares de la Dr. Raquel Alemán Sánchez.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0a0614">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════
+   DESIGN TOKENS — Cosmic Maravilla
+   ═══════════════════════════════════════════ */
+
+:root {
+  /* Type scale */
+  --text-xs:   clamp(0.75rem,  0.7rem  + 0.25vw, 0.875rem);
+  --text-sm:   clamp(0.875rem, 0.8rem  + 0.35vw, 1rem);
+  --text-base: clamp(1rem,     0.95rem + 0.25vw, 1.125rem);
+  --text-lg:   clamp(1.125rem, 1rem    + 0.75vw, 1.5rem);
+  --text-xl:   clamp(1.5rem,   1.2rem  + 1.25vw, 2.25rem);
+  --text-2xl:  clamp(2rem,     1.2rem  + 2.5vw,  3.5rem);
+  --text-3xl:  clamp(2.5rem,   1rem    + 4vw,    5rem);
+  --text-hero: clamp(3rem,     0.5rem  + 7vw,    8rem);
+
+  /* Spacing */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  /* Fonts */
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-body: 'DM Sans', 'Helvetica Neue', sans-serif;
+
+  /* Radius */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Content widths */
+  --content-narrow: 640px;
+  --content-default: 960px;
+  --content-wide: 1200px;
+}
+
+/* ═══════════════════════════════════════════
+   COSMIC PALETTE — Light & Dark
+   ═══════════════════════════════════════════ */
+
+:root, [data-theme="dark"] {
+  --color-bg:             #0a0614;
+  --color-bg-2:           #0f0a1e;
+  --color-surface:        #16102a;
+  --color-surface-2:      #1c1535;
+  --color-surface-offset: #120c22;
+  --color-surface-dynamic: #231a40;
+  --color-divider:        #2a2045;
+  --color-border:         #352a55;
+
+  --color-text:           #ede4f7;
+  --color-text-muted:     #a89cc4;
+  --color-text-faint:     #6a5d85;
+  --color-text-inverse:   #0a0614;
+
+  --color-primary:        #d4a853;
+  --color-primary-hover:  #e0b96a;
+  --color-primary-active: #c4943a;
+  --color-primary-highlight: rgba(212, 168, 83, 0.15);
+
+  --color-accent:         #7b6fcf;
+  --color-accent-hover:   #9186db;
+  --color-accent-glow:    rgba(123, 111, 207, 0.3);
+
+  --color-cyan:           #57cfc9;
+  --color-magenta:        #c95b8a;
+  --color-gold:           #d4a853;
+  --color-star:           #fef7e0;
+
+  --color-abundancia:     #57cfc9;
+  --color-salud:          #7bcf6f;
+  --color-amor:           #e86a9e;
+  --color-paz:            #9186db;
+
+  --shadow-sm: 0 1px 2px oklch(0 0 0 / 0.3);
+  --shadow-md: 0 4px 12px oklch(0 0 0 / 0.4);
+  --shadow-lg: 0 12px 32px oklch(0 0 0 / 0.5);
+}
+
+[data-theme="light"] {
+  --color-bg:             #f0ecf5;
+  --color-bg-2:           #e8e2f0;
+  --color-surface:        #ffffff;
+  --color-surface-2:      #f8f6fb;
+  --color-surface-offset: #eae4f2;
+  --color-surface-dynamic: #ddd6ea;
+  --color-divider:        #d4cce2;
+  --color-border:         #c4bcd6;
+
+  --color-text:           #1a1428;
+  --color-text-muted:     #6a5d82;
+  --color-text-faint:     #a49bb8;
+  --color-text-inverse:   #ffffff;
+
+  --color-primary:        #b88a30;
+  --color-primary-hover:  #9d7326;
+  --color-primary-active: #7f5d1c;
+  --color-primary-highlight: rgba(184, 138, 48, 0.12);
+
+  --color-accent:         #5a4da8;
+  --color-accent-hover:   #4a3d91;
+  --color-accent-glow:    rgba(90, 77, 168, 0.2);
+
+  --color-cyan:           #1a9e98;
+  --color-magenta:        #b84a76;
+  --color-gold:           #b88a30;
+  --color-star:           #f5e6c8;
+
+  --color-abundancia:     #1a9e98;
+  --color-salud:          #3d9e2e;
+  --color-amor:           #c9457a;
+  --color-paz:            #5a4da8;
+
+  --shadow-sm: 0 1px 2px oklch(0.2 0.03 280 / 0.08);
+  --shadow-md: 0 4px 12px oklch(0.2 0.03 280 / 0.12);
+  --shadow-lg: 0 12px 32px oklch(0.2 0.03 280 / 0.16);
+}
+
+/* ═══════════════════════════════════════════
+   BASE STYLES
+   ═══════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--space-16);
+}
+
+body {
+  min-height: 100dvh;
+  line-height: 1.6;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+}
+
+img, picture, video, canvas, svg { display: block; max-width: 100%; height: auto; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  line-height: 1.15;
+  font-family: var(--font-display);
+}
+
+p, li, figcaption { text-wrap: pretty; max-width: 72ch; }
+
+::selection {
+  background: var(--color-primary-highlight);
+  color: var(--color-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+button { cursor: pointer; background: none; border: none; font-family: var(--font-body); }
+
+a, button, [role="button"] {
+  transition: color var(--transition-interactive),
+              background var(--transition-interactive),
+              border-color var(--transition-interactive),
+              box-shadow var(--transition-interactive),
+              transform var(--transition-interactive);
+}
+
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;
+}
+
+/* ═══════════════════════════════════════════
+   ANIMATED STARS BACKGROUND
+   ═══════════════════════════════════════════ */
+
+.stars-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--color-star);
+  animation: twinkle var(--duration, 3s) ease-in-out infinite alternate;
+  animation-delay: var(--delay, 0s);
+}
+
+@keyframes twinkle {
+  0%   { opacity: 0.2; transform: scale(0.8); }
+  50%  { opacity: 0.8; transform: scale(1.2); }
+  100% { opacity: 0.4; transform: scale(1); }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: var(--color-star);
+  border-radius: 50%;
+  box-shadow: 0 0 6px 2px var(--color-star);
+  animation: shoot var(--shoot-duration, 4s) linear infinite;
+  animation-delay: var(--shoot-delay, 0s);
+  opacity: 0;
+}
+
+@keyframes shoot {
+  0%   { transform: translate(0, 0); opacity: 0; }
+  5%   { opacity: 1; }
+  20%  { transform: translate(var(--shoot-x, -300px), var(--shoot-y, 300px)); opacity: 1; }
+  25%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.nebula {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 1s var(--ease-out);
+}
+
+.nebula-1 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, var(--color-accent) 0%, transparent 70%);
+  top: -200px; right: -200px;
+}
+
+.nebula-2 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, var(--color-magenta) 0%, transparent 70%);
+  bottom: 10%; left: -150px;
+}
+
+.nebula-3 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, var(--color-cyan) 0%, transparent 70%);
+  top: 50%; right: -100px;
+}
+
+/* ═══════════════════════════════════════════
+   DARK MODE TOGGLE
+   ═══════════════════════════════════════════ */
+
+.theme-toggle {
+  position: fixed;
+  top: var(--space-4);
+  right: var(--space-4);
+  z-index: 100;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-md);
+}
+
+.theme-toggle:hover {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* ═══════════════════════════════════════════
+   SCROLL INDICATOR
+   ═══════════════════════════════════════════ */
+
+.scroll-indicator {
+  position: fixed;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-text-faint);
+  font-size: var(--text-xs);
+  font-family: var(--font-body);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0;
+  animation: fadeInUp 1s var(--ease-out) 2s forwards;
+}
+
+.scroll-indicator .mouse {
+  width: 24px;
+  height: 38px;
+  border: 2px solid var(--color-text-faint);
+  border-radius: 12px;
+  position: relative;
+}
+
+.scroll-indicator .mouse::after {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px;
+  height: 8px;
+  background: var(--color-primary);
+  border-radius: 2px;
+  animation: scrollWheel 2s ease-in-out infinite;
+}
+
+@keyframes scrollWheel {
+  0%, 100% { transform: translateX(-50%) translateY(0); opacity: 1; }
+  50% { transform: translateX(-50%) translateY(12px); opacity: 0; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateX(-50%) translateY(10px); }
+  to   { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+/* ═══════════════════════════════════════════
+   HERO SECTION
+   ═══════════════════════════════════════════ */
+
+.hero {
+  position: relative;
+  z-index: 1;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-8);
+  padding-bottom: var(--space-24);
+}
+
+.hero__planet {
+  width: min(280px, 60vw);
+  height: min(280px, 60vw);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, 
+    #7b6fcf 0%,
+    #5a4da8 30%,
+    #352a55 60%,
+    #1c1535 100%
+  );
+  box-shadow: 
+    0 0 60px rgba(123, 111, 207, 0.3),
+    0 0 120px rgba(123, 111, 207, 0.15),
+    inset -20px -20px 60px rgba(0, 0, 0, 0.5);
+  margin-bottom: var(--space-8);
+  position: relative;
+  animation: float 6s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__planet-logo {
+  position: relative;
+  z-index: 2;
+  width: 92%;
+  height: 92%;
+  animation: logoFloat 5s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 20px rgba(212, 168, 83, 0.6));
+}
+
+@keyframes logoFloat {
+  0%, 100% { transform: scale(1) translateY(0); }
+  25% { transform: scale(1.06) translateY(-5px); }
+  50% { transform: scale(1) translateY(0); }
+  75% { transform: scale(1.06) translateY(5px); }
+}
+
+.hero__planet::before {
+  content: '';
+  position: absolute;
+  inset: 15%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 60% 40%, 
+    rgba(212, 168, 83, 0.08) 0%,
+    transparent 70%
+  );
+}
+
+.hero__planet::after {
+  content: '';
+  position: absolute;
+  top: 20%; left: 25%;
+  width: 30%; height: 8%;
+  background: radial-gradient(ellipse, rgba(254, 247, 224, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+  transform: rotate(-20deg);
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.hero__ring {
+  position: absolute;
+  width: 140%;
+  height: 40%;
+  top: 30%;
+  left: -20%;
+  border-radius: 50%;
+  border: 2px solid rgba(212, 168, 83, 0.15);
+  transform: rotateX(70deg);
+  animation: ringSpin 12s linear infinite;
+}
+
+@keyframes ringSpin {
+  from { transform: rotateX(70deg) rotate(0deg); }
+  to   { transform: rotateX(70deg) rotate(360deg); }
+}
+
+.hero__brand {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: var(--space-1);
+}
+
+.hero__brand-sub {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-2);
+  letter-spacing: 0.08em;
+}
+
+.hero__tagline {
+  font-size: var(--text-lg);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-6);
+}
+
+.hero__welcome {
+  font-family: var(--font-display);
+  font-size: calc(var(--text-base) * 1.1);
+  font-style: italic;
+  color: var(--color-text-muted);
+  max-width: 50ch;
+  margin: 0 auto var(--space-6);
+  line-height: 1.6;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: var(--text-hero);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1;
+  margin-bottom: var(--space-4);
+  background: linear-gradient(135deg, var(--color-star) 0%, var(--color-primary) 50%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero__subtitle {
+  font-size: var(--text-lg);
+  color: var(--color-text-muted);
+  max-width: 60ch;
+  margin: 0 auto var(--space-6);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.hero__author {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-style: italic;
+  color: var(--color-primary);
+  margin-bottom: var(--space-2);
+}
+
+.hero__pillars {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: var(--space-6);
+}
+
+.hero__pillar-tag {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  background: var(--color-surface);
+  backdrop-filter: blur(8px);
+}
+
+.hero__pillar-tag:nth-child(1) { border-color: var(--color-abundancia); color: var(--color-abundancia); }
+.hero__pillar-tag:nth-child(2) { border-color: var(--color-salud); color: var(--color-salud); }
+.hero__pillar-tag:nth-child(3) { border-color: var(--color-amor); color: var(--color-amor); }
+.hero__pillar-tag:nth-child(4) { border-color: var(--color-paz); color: var(--color-paz); }
+
+/* ═══════════════════════════════════════════
+   PLANET SECTIONS (4 Pillars)
+   ═══════════════════════════════════════════ */
+
+.planet-section {
+  position: relative;
+  z-index: 1;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8);
+  padding-block: var(--space-20);
+  overflow: hidden;
+}
+
+.planet-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out);
+  z-index: -1;
+}
+
+.planet-section--visible::before {
+  opacity: 1;
+}
+
+/* Each pillar's atmospheric glow */
+.planet-section--abundancia::before {
+  background: radial-gradient(ellipse at 50% 50%, rgba(87, 207, 201, 0.08) 0%, transparent 60%);
+}
+.planet-section--salud::before {
+  background: radial-gradient(ellipse at 50% 50%, rgba(123, 207, 111, 0.08) 0%, transparent 60%);
+}
+.planet-section--amor::before {
+  background: radial-gradient(ellipse at 50% 50%, rgba(232, 106, 158, 0.08) 0%, transparent 60%);
+}
+.planet-section--paz::before {
+  background: radial-gradient(ellipse at 50% 50%, rgba(145, 134, 219, 0.08) 0%, transparent 60%);
+}
+
+.planet-container {
+  max-width: var(--content-default);
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .planet-container {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+    text-align: center;
+  }
+}
+
+/* Planet visual */
+.planet-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.small-planet {
+  width: clamp(160px, 20vw, 280px);
+  height: clamp(160px, 20vw, 280px);
+  border-radius: 50%;
+  position: relative;
+  animation: float 8s ease-in-out infinite;
+  animation-delay: var(--float-delay, 0s);
+}
+
+.small-planet--abundancia {
+  background: radial-gradient(circle at 35% 35%, #57cfc9 0%, #1a9e98 40%, #0d5f5c 70%, #072e2c 100%);
+  box-shadow: 0 0 40px rgba(87, 207, 201, 0.2), inset -15px -15px 40px rgba(0,0,0,0.4);
+}
+
+.small-planet--salud {
+  background: radial-gradient(circle at 35% 35%, #7bcf6f 0%, #3d9e2e 40%, #24661a 70%, #0f330a 100%);
+  box-shadow: 0 0 40px rgba(123, 207, 111, 0.2), inset -15px -15px 40px rgba(0,0,0,0.4);
+}
+
+.small-planet--amor {
+  background: radial-gradient(circle at 35% 35%, #e86a9e 0%, #c9457a 40%, #9a2e5a 70%, #5a1a34 100%);
+  box-shadow: 0 0 40px rgba(232, 106, 158, 0.2), inset -15px -15px 40px rgba(0,0,0,0.4);
+}
+
+.small-planet--paz {
+  background: radial-gradient(circle at 35% 35%, #9186db 0%, #5a4da8 40%, #3a307a 70%, #1e1845 100%);
+  box-shadow: 0 0 40px rgba(145, 134, 219, 0.2), inset -15px -15px 40px rgba(0,0,0,0.4);
+}
+
+.planet-ring {
+  position: absolute;
+  width: 130%;
+  height: 35%;
+  top: 32%;
+  left: -15%;
+  border-radius: 50%;
+  border: 2px solid;
+  opacity: 0.3;
+  transform: rotateX(65deg);
+}
+
+.planet-ring--abundancia { border-color: var(--color-abundancia); }
+.planet-ring--salud { border-color: var(--color-salud); }
+.planet-ring--amor { border-color: var(--color-amor); }
+.planet-ring--paz { border-color: var(--color-paz); }
+
+/* Manifestation content */
+.planet-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.planet-number {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  color: var(--color-text-faint);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.planet-title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.planet-title--abundancia { color: var(--color-abundancia); }
+.planet-title--salud { color: var(--color-salud); }
+.planet-title--amor { color: var(--color-amor); }
+.planet-title--paz { color: var(--color-paz); }
+
+.planet-subtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-muted);
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: var(--space-2);
+}
+
+.planet-description {
+  font-size: var(--text-base);
+  color: var(--color-text);
+  line-height: 1.8;
+  max-width: 55ch;
+}
+
+.planet-description p {
+  margin-bottom: var(--space-4);
+}
+
+@media (max-width: 768px) {
+  .planet-description {
+    margin: 0 auto;
+  }
+}
+
+/* Audio player */
+.audio-player {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .audio-player {
+    margin: var(--space-4) auto 0;
+  }
+}
+
+.audio-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-interactive);
+}
+
+.audio-btn--abundancia { background: var(--color-abundancia); color: #fff; }
+.audio-btn--salud { background: var(--color-salud); color: #fff; }
+.audio-btn--amor { background: var(--color-amor); color: #fff; }
+.audio-btn--paz { background: var(--color-paz); color: #fff; }
+
+.audio-btn:hover {
+  transform: scale(1.08);
+  filter: brightness(1.15);
+}
+
+.audio-btn:active {
+  transform: scale(0.95);
+}
+
+.audio-btn.playing {
+  animation: pulse-glow 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 var(--glow-color, rgba(212, 168, 83, 0.4)); }
+  50% { box-shadow: 0 0 0 12px transparent; }
+}
+
+.audio-btn--abundancia.playing { --glow-color: rgba(87, 207, 201, 0.5); }
+.audio-btn--salud.playing { --glow-color: rgba(123, 207, 111, 0.5); }
+.audio-btn--amor.playing { --glow-color: rgba(232, 106, 158, 0.5); }
+.audio-btn--paz.playing { --glow-color: rgba(145, 134, 219, 0.5); }
+
+.audio-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.audio-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.audio-label {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.audio-status {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
+
+.audio-progress {
+  width: 100%;
+  height: 3px;
+  background: var(--color-surface-offset);
+  border-radius: 2px;
+  margin-top: var(--space-1);
+  overflow: hidden;
+}
+
+.audio-progress__bar {
+  height: 100%;
+  width: 0%;
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.audio-progress__bar--abundancia { background: var(--color-abundancia); }
+.audio-progress__bar--salud { background: var(--color-salud); }
+.audio-progress__bar--amor { background: var(--color-amor); }
+.audio-progress__bar--paz { background: var(--color-paz); }
+
+/* ═══════════════════════════════════════════
+   JOURNEY DIVIDER
+   ═══════════════════════════════════════════ */
+
+.journey-divider {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--space-12) var(--space-4);
+  text-align: center;
+}
+
+.journey-divider__icon {
+  width: 3px;
+  height: 60px;
+  background: linear-gradient(to bottom, var(--color-primary), transparent);
+  margin-bottom: var(--space-4);
+}
+
+.journey-divider__text {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-style: italic;
+  color: var(--color-text-faint);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ═══════════════════════════════════════════
+   FOOTER / CLOSING
+   ═══════════════════════════════════════════ */
+
+.footer {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) var(--space-8);
+  text-align: center;
+  border-top: 1px solid var(--color-divider);
+}
+
+.footer__planet {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #7b6fcf 0%, #352a55 60%, #1c1535 100%);
+  margin: 0 auto var(--space-6);
+  box-shadow: 0 0 30px rgba(123, 111, 207, 0.2);
+  animation: float 5s ease-in-out infinite;
+}
+
+.footer__title {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.footer__text {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  max-width: 50ch;
+  margin: 0 auto var(--space-6);
+}
+
+.footer__author {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--color-primary);
+}
+
+.footer__credit {
+  margin-top: var(--space-8);
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+}
+
+.footer__stars {
+  display: flex;
+  gap: var(--space-1);
+  justify-content: center;
+  margin-bottom: var(--space-4);
+  color: var(--color-primary);
+  font-size: var(--text-sm);
+}
+
+/* ═══════════════════════════════════════════
+   RETO 21 DÍAS
+   ═══════════════════════════════════════════ */
+
+.challenge {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) var(--space-8);
+  text-align: center;
+  border-top: 1px solid var(--color-divider);
+}
+
+.challenge__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.challenge__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  max-width: 60ch;
+  margin: 0 auto var(--space-8);
+  font-weight: 300;
+}
+
+.challenge__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
+  gap: var(--space-4);
+  max-width: var(--content-wide);
+  margin: 0 auto;
+}
+
+.challenge__day {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-interactive);
+  position: relative;
+  overflow: hidden;
+}
+
+.challenge__day:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.challenge__day--completed {
+  border-color: var(--color-success);
+  background: linear-gradient(135deg, var(--color-surface) 0%, oklch(from var(--color-success) l c h / 0.08) 100%);
+}
+
+.challenge__day--completed .challenge__day-check {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: #fff;
+}
+
+.challenge__day-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.challenge__day-num {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+  font-family: var(--font-display);
+}
+
+.challenge__day-check {
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all var(--transition-interactive);
+  font-size: 12px;
+  margin-left: auto;
+  color: transparent;
+}
+
+.challenge__day-title {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  margin-bottom: var(--space-1);
+}
+
+.challenge__day-action {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.challenge__day-icon {
+  font-size: 16px;
+}
+
+.challenge__progress {
+  max-width: 600px;
+  margin: var(--space-8) auto 0;
+  text-align: center;
+}
+
+.challenge__progress-bar {
+  width: 100%;
+  height: 6px;
+  background: var(--color-surface-offset);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: var(--space-2);
+}
+
+.challenge__progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border-radius: 3px;
+  transition: width 0.5s var(--ease-out);
+  width: 0%;
+}
+
+.challenge__progress-text {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+}
+
+/* ═══════════════════════════════════════════
+   DIARIO DE PREGUNTAS
+   ═══════════════════════════════════════════ */
+
+.journal {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) var(--space-8);
+  border-top: 1px solid var(--color-divider);
+}
+
+.journal__container {
+  max-width: var(--content-default);
+  margin: 0 auto;
+}
+
+.journal__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+
+.journal__subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  max-width: 50ch;
+  margin: 0 auto var(--space-10);
+  font-style: italic;
+}
+
+.journal__questions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+  gap: var(--space-6);
+}
+
+.journal__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  transition: all var(--transition-interactive);
+}
+
+.journal__card:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+}
+
+.journal__card-icon {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-3);
+}
+
+.journal__card-question {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-3);
+}
+
+.journal__card-prompt {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+}
+
+.journal__card-textarea {
+  width: 100%;
+  min-height: 100px;
+  background: var(--color-surface-offset);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-3);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  resize: vertical;
+  transition: border-color var(--transition-interactive);
+}
+
+.journal__card-textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-highlight);
+}
+
+.journal__card-textarea::placeholder {
+  color: var(--color-text-faint);
+}
+
+.journal__save-btn {
+  display: block;
+  margin: var(--space-8) auto 0;
+  padding: var(--space-3) var(--space-8);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-interactive);
+}
+
+.journal__save-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(212, 168, 83, 0.3);
+}
+
+.journal__save-btn:active {
+  transform: translateY(0);
+}
+
+/* ═══════════════════════════════════════════
+   AFIRMACIONES POR ÁREA
+   ═══════════════════════════════════════════ */
+
+.affirmations {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) var(--space-8);
+  border-top: 1px solid var(--color-divider);
+  text-align: center;
+}
+
+.affirmations__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+
+.affirmations__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  max-width: 50ch;
+  margin: 0 auto var(--space-10);
+}
+
+.affirmations__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: var(--space-5);
+  max-width: var(--content-wide);
+  margin: 0 auto;
+}
+
+.affirmation__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  text-align: left;
+  transition: all var(--transition-interactive);
+  position: relative;
+  overflow: hidden;
+}
+
+.affirmation__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  opacity: 0.6;
+}
+
+.affirmation__card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.affirmation__card--amor-propio::before { background: var(--color-amor); }
+.affirmation__card--abundancia::before { background: var(--color-abundancia); }
+.affirmation__card--salud::before { background: var(--color-salud); }
+.affirmation__card--paz::before { background: var(--color-paz); }
+.affirmation__card--proposito::before { background: var(--color-primary); }
+.affirmation__card--fe::before { background: var(--color-gold); }
+.affirmation__card--disciplina::before { background: var(--color-accent); }
+
+.affirmation__area {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: var(--space-2);
+}
+
+.affirmation__area--amor-propio { color: var(--color-amor); }
+.affirmation__area--abundancia { color: var(--color-abundancia); }
+.affirmation__area--salud { color: var(--color-salud); }
+.affirmation__area--paz { color: var(--color-paz); }
+.affirmation__area--proposito { color: var(--color-primary); }
+.affirmation__area--fe { color: var(--color-gold); }
+.affirmation__area--disciplina { color: var(--color-accent); }
+
+.affirmation__text {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  font-style: italic;
+  color: var(--color-text);
+  line-height: 1.7;
+}
+
+.affirmation__audio-btn {
+  margin-top: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  transition: all var(--transition-interactive);
+}
+
+.affirmation__audio-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.affirmation__audio-btn.playing {
+  border-color: var(--color-primary);
+  background: var(--color-primary-highlight);
+  color: var(--color-primary);
+  animation: affPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes affPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(212, 168, 83, 0.3); }
+  50% { box-shadow: 0 0 0 8px transparent; }
+}
+
+/* ═══════════════════════════════════════════
+   CARTA AL YO DEL FUTURO
+   ═══════════════════════════════════════════ */
+
+.future-letter {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) var(--space-8);
+  border-top: 1px solid var(--color-divider);
+  text-align: center;
+}
+
+.future-letter__container {
+  max-width: var(--content-default);
+  margin: 0 auto;
+}
+
+.future-letter__icon {
+  font-size: var(--text-3xl);
+  margin-bottom: var(--space-4);
+}
+
+.future-letter__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+
+.future-letter__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  max-width: 55ch;
+  margin: 0 auto var(--space-8);
+  line-height: 1.7;
+}
+
+.future-letter__prompts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .future-letter__prompts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.future-letter__prompt {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+.future-letter__textarea {
+  width: 100%;
+  min-height: 250px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  resize: vertical;
+  transition: border-color var(--transition-interactive);
+}
+
+.future-letter__textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-highlight);
+}
+
+.future-letter__textarea::placeholder {
+  color: var(--color-text-faint);
+  font-style: italic;
+}
+
+.future-letter__actions {
+  display: flex;
+  gap: var(--space-4);
+  justify-content: center;
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.future-letter__btn {
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  transition: all var(--transition-interactive);
+}
+
+.future-letter__btn--primary {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+}
+
+.future-letter__btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(212, 168, 83, 0.3);
+}
+
+.future-letter__btn--secondary {
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+}
+
+.future-letter__btn--secondary:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* ═══════════════════════════════════════════
+   PLAN DE ACCIÓN
+   ═══════════════════════════════════════════ */
+
+.action-plan {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) var(--space-8);
+  border-top: 1px solid var(--color-divider);
+  text-align: center;
+  background: radial-gradient(ellipse at center, var(--color-surface) 0%, transparent 100%);
+}
+
+.action-plan__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+
+.action-plan__subtitle {
+  color: var(--color-text-muted);
+  font-size: var(--text-base);
+  max-width: 55ch;
+  margin: 0 auto var(--space-10);
+}
+
+.action-plan__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));
+  gap: var(--space-6);
+  max-width: var(--content-wide);
+  margin: 0 auto;
+}
+
+.action-plan__card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  text-align: center;
+  transition: all var(--transition-interactive);
+}
+
+.action-plan__card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.action-plan__card-icon {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-3);
+}
+
+.action-plan__card-title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+}
+
+.action-plan__card-desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.action-plan__cta {
+  display: inline-block;
+  margin-top: var(--space-8);
+  padding: var(--space-3) var(--space-8);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: all var(--transition-interactive);
+}
+
+.action-plan__cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(212, 168, 83, 0.3);
+}
+
+/* ═══════════════════════════════════════════
+   TIENDA / QR
+   ═══════════════════════════════════════════ */
+
+.store-section {
+  position: relative;
+  z-index: 1;
+  padding: var(--space-16) var(--space-8);
+  border-top: 1px solid var(--color-divider);
+  text-align: center;
+}
+
+.store-section__container {
+  max-width: var(--content-default);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-10);
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .store-section__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.store-section__info {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .store-section__info {
+    text-align: center;
+  }
+}
+
+.store-section__title {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin-bottom: var(--space-3);
+  color: var(--color-text);
+}
+
+.store-section__desc {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: 1.8;
+  margin-bottom: var(--space-4);
+}
+
+.store-section__products {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.store-section__product {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  gap: var(--space-1) var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all var(--transition-interactive);
+  position: relative;
+  overflow: hidden;
+}
+
+.store-section__product:hover {
+  border-color: var(--color-primary);
+  transform: translateX(4px);
+  box-shadow: var(--shadow-md);
+}
+
+.store-section__product:active {
+  transform: translateX(2px);
+}
+
+.store-section__product > strong {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  font-family: var(--font-display);
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.store-section__product-price {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+  grid-column: 2;
+  grid-row: 1;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.store-section__product-desc {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  grid-column: 1 / -1;
+  grid-row: 2;
+  line-height: 1.4;
+}
+
+.store-section__product-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 0 var(--radius-lg) 0 var(--radius-md);
+}
+
+.store-section__link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-6);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition-interactive);
+}
+
+.store-section__link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(212, 168, 83, 0.3);
+}
+
+.store-section__qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.store-section__qr-img {
+  width: 200px;
+  height: 200px;
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--color-border);
+  padding: var(--space-2);
+  background: var(--color-surface);
+  transition: all var(--transition-interactive);
+}
+
+.store-section__qr-img:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--color-primary);
+}
+
+.store-section__qr-label {
+  font-size: var(--text-xs);
+  color: var(--color-text-faint);
+  max-width: 30ch;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .store-section__qr-img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE FOR NEW SECTIONS
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .challenge__grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(160px, 100%), 1fr));
+  }
+  .challenge__title,
+  .journal__title,
+  .affirmations__title,
+  .future-letter__title,
+  .action-plan__title,
+  .store-section__title {
+    font-size: var(--text-xl);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   FLOATING QR CODE
+   ═══════════════════════════════════════════ */
+
+.float-qr {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.float-qr__toggle {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(212, 168, 83, 0.35);
+  transition: all var(--transition-interactive);
+  position: relative;
+  z-index: 2;
+}
+
+.float-qr__toggle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 28px rgba(212, 168, 83, 0.5);
+}
+
+.float-qr__toggle--active {
+  transform: rotate(45deg);
+}
+
+.float-qr__toggle--active:hover {
+  transform: rotate(45deg) scale(1.1);
+}
+
+.float-qr__content {
+  position: absolute;
+  bottom: calc(100% + var(--space-3));
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px) scale(0.95);
+  transform-origin: bottom right;
+  transition: all 0.25s var(--ease-out);
+  width: 220px;
+}
+
+.float-qr__content--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.float-qr__img {
+  width: 160px;
+  height: 160px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  padding: var(--space-2);
+  background: #fff;
+}
+
+.float-qr__label {
+  font-size: 11px;
+  color: var(--color-text-faint);
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.float-qr__link {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition-interactive);
+}
+
+.float-qr__link:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .float-qr {
+    bottom: var(--space-4);
+    right: var(--space-4);
+  }
+  .float-qr__toggle {
+    width: 44px;
+    height: 44px;
+  }
+  .float-qr__img {
+    width: 130px;
+    height: 130px;
+  }
+  .float-qr__content {
+    width: 180px;
+    padding: var(--space-4);
+  }
+}
+
+/* ═══════════════════════════════════════════
+   SCROLL ANIMATIONS (CSS-only)
+   ═══════════════════════════════════════════ */
+
+.fade-section {
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+}
+
+.fade-section--visible {
+  opacity: 1;
+}
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE ADJUSTMENTS
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: var(--text-2xl);
+  }
+
+  .hero__brand {
+    font-size: var(--text-xs);
+  }
+
+  .hero__tagline {
+    font-size: var(--text-base);
+  }
+
+  .hero__welcome {
+    font-size: var(--text-sm);
+  }
+  
+  .hero__subtitle {
+    font-size: var(--text-base);
+  }
+
+  .planet-section {
+    padding-block: var(--space-12);
+  }
+
+  .planet-title {
+    font-size: var(--text-xl);
+  }
+
+  .small-planet {
+    width: 140px;
+    height: 140px;
+  }
+
+  .planet-visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__title {
+    font-size: var(--text-xl);
+  }
+  
+  .hero__planet {
+    width: 160px;
+    height: 160px;
+  }
+
+  .small-planet {
+    width: 120px;
+    height: 120px;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     FLOATING QR (always visible)
+     ═══════════════════════════════════════════ -->
+<div class="float-qr" id="floatQr">
+  <button class="float-qr__toggle" id="floatQrToggle" aria-label="Abrir código QR">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="3" y="3" width="7" height="7"/>
+      <rect x="14" y="3" width="7" height="7"/>
+      <rect x="14" y="14" width="7" height="7"/>
+      <rect x="3" y="14" width="4" height="4"/>
+      <rect x="9" y="14" width="2" height="2"/>
+      <rect x="3" y="20" width="4" height="4"/>
+      <rect x="9" y="18" width="2" height="2"/>
+    </svg>
+  </button>
+  <div class="float-qr__content" id="floatQrContent">
+    <img src="qr-amazon.png" alt="QR Amazon Salvando Vidas" class="float-qr__img">
+    <p class="float-qr__label">Escanea para ir a la tienda</p>
+    <a href="https://us.amazon.com/Dra-RAQUEL-ALEMAN-SANCHEZ/e/B0GY9R6D5B" target="_blank" rel="noopener noreferrer" class="float-qr__link">Abrir en Amazon →</a>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     BACKGROUND: Stars, Nebulae
+     ═══════════════════════════════════════════ -->
+
+<div class="stars-container" id="stars" aria-hidden="true"></div>
+<div class="nebula nebula-1" aria-hidden="true"></div>
+<div class="nebula nebula-2" aria-hidden="true"></div>
+<div class="nebula nebula-3" aria-hidden="true"></div>
+
+<!-- ═══════════════════════════════════════════
+     THEME TOGGLE
+     ═══════════════════════════════════════════ -->
+
+<button class="theme-toggle" data-theme-toggle aria-label="Cambiar a modo claro">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+  </svg>
+</button>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════ -->
+
+<section class="hero" id="inicio">
+  <div class="hero__planet" aria-hidden="true">
+    <div class="hero__ring"></div>
+    <div class="hero__planet-logo">
+      <img src="logo-marca-circular.png" alt="Dra. Raquel Alemán Sánchez — Salvando Vidas" class="logo-img">
+    </div>
+  </div>
+
+  <div class="hero__brand">MANIFESTACIONES</div>
+  <div class="hero__brand-sub">— Dra. Raquel Alemán Sánchez —</div>
+  <div class="hero__tagline">SALVANDO VIDAS</div>
+
+  <p class="hero__welcome">Bienvenido, querido lector. Prepárate para un viaje que transformará tu alma.</p>
+  
+  <h1 class="hero__title">Maravilla</h1>
+  <p class="hero__subtitle">
+    Un viaje cósmico a través de las manifestaciones que transforman el alma.<br>
+    Cuatro planetas. Cuatro pilares. Una experiencia de asombro y renovación.
+  </p>
+  <p class="hero__author">— Dr. Raquel Alemán Sánchez</p>
+  
+  <div class="hero__pillars">
+    <span class="hero__pillar-tag">✦ Abundancia</span>
+    <span class="hero__pillar-tag">✦ Salud</span>
+    <span class="hero__pillar-tag">✦ Amor</span>
+    <span class="hero__pillar-tag">✦ Paz Mental</span>
+  </div>
+</section>
+
+<div class="scroll-indicator" aria-hidden="true">
+  <div class="mouse"></div>
+  <span>Desplázate para viajar</span>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PLANET 1 — ABUNDANCIA
+     ═══════════════════════════════════════════ -->
+
+<section class="planet-section planet-section--abundancia fade-section" id="abundancia">
+  <div class="planet-container">
+    <div class="planet-visual">
+      <div class="small-planet small-planet--abundancia" style="--float-delay: 0s" aria-hidden="true">
+        <div class="planet-ring planet-ring--abundancia"></div>
+      </div>
+    </div>
+    <div class="planet-content">
+      <span class="planet-number">✦ Primer Planeta</span>
+      <h2 class="planet-title planet-title--abundancia">Abundancia</h2>
+      <p class="planet-subtitle">"El universo es infinito y generoso, y tú eres parte de él."</p>
+      
+      <div class="planet-description">
+        <p>
+          Cierra los ojos. Respira profundo. Siente cómo el aire llena tus pulmones — 
+          ese es tu primer recordatorio de que la abundancia ya está aquí. 
+          No es algo que debas conseguir. Es algo que debes recordar.
+        </p>
+        <p>
+          Eres un ser infinito habitando un cuerpo finito. Así como las estrellas 
+          no preguntan si merecen brillar, tú no necesitas preguntar si mereces recibir. 
+          La abundancia es tu estado natural. El flujo del universo corre a través de ti.
+        </p>
+        <p>
+          Visualiza ahora: frente a ti, un río de luz dorada. Cada molécula de esa luz 
+          es una oportunidad, un recurso, una bendición. Bebe de ese río. Déjalo 
+          llenar cada célula de tu cuerpo. No hay escasez. Nunca la hubo.
+        </p>
+        <p>
+          <em>"Yo soy abundancia. Yo recibo con gratitud. Yo fluyo con el universo."</em>
+        </p>
+      </div>
+
+      <div class="audio-player" data-pillar="abundancia">
+        <button class="audio-btn audio-btn--abundancia" aria-label="Escuchar manifestación de abundancia">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </button>
+        <div class="audio-info">
+          <div class="audio-label">Audio de Manifestación</div>
+          <div class="audio-status">Toca para escuchar</div>
+          <div class="audio-progress">
+            <div class="audio-progress__bar audio-progress__bar--abundancia"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="journey-divider fade-section" aria-hidden="true">
+  <div class="journey-divider__icon"></div>
+  <span class="journey-divider__text">Continúa tu viaje...</span>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PLANET 2 — SALUD
+     ═══════════════════════════════════════════ -->
+
+<section class="planet-section planet-section--salud fade-section" id="salud">
+  <div class="planet-container">
+    <div class="planet-content">
+      <span class="planet-number">✦ Segundo Planeta</span>
+      <h2 class="planet-title planet-title--salud">Salud</h2>
+      <p class="planet-subtitle">"Tu cuerpo es el templo donde habita el alma."</p>
+      
+      <div class="planet-description">
+        <p>
+          Siente tu corazón latir. No te pide permiso. No se detiene. Es la inteligencia 
+          perfecta de tu cuerpo trabajando por ti, para ti. Cada latido es un mantra, 
+          cada respiración una afirmación de vida.
+        </p>
+        <p>
+          La salud no es la ausencia de enfermedad. Es la presencia de vitalidad. 
+          Es la capacidad de despertar cada mañana y sentir la alegría de existir. 
+          Es la fuerza que fluye por cada músculo, cada hueso, cada órgano.
+        </p>
+        <p>
+          Visualiza ahora: una luz verde esmeralda que nace en el centro de tu pecho. 
+          Se expande lentamente. Recorre cada brazo, cada pierna, cada rincón de tu ser. 
+          Donde esta luz toca, la sanación ocurre. Las células se regeneran. 
+          La energía se renueva. Eres vida en movimiento.
+        </p>
+        <p>
+          <em>"Mi cuerpo es perfecto en su sabiduría. La salud fluye en mí. Soy vitalidad."</em>
+        </p>
+      </div>
+
+      <div class="audio-player" data-pillar="salud">
+        <button class="audio-btn audio-btn--salud" aria-label="Escuchar manifestación de salud">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </button>
+        <div class="audio-info">
+          <div class="audio-label">Audio de Manifestación</div>
+          <div class="audio-status">Toca para escuchar</div>
+          <div class="audio-progress">
+            <div class="audio-progress__bar audio-progress__bar--salud"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="planet-visual">
+      <div class="small-planet small-planet--salud" style="--float-delay: -2s" aria-hidden="true">
+        <div class="planet-ring planet-ring--salud"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="journey-divider fade-section" aria-hidden="true">
+  <div class="journey-divider__icon"></div>
+  <span class="journey-divider__text">Sigue brillando...</span>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PLANET 3 — AMOR
+     ═══════════════════════════════════════════ -->
+
+<section class="planet-section planet-section--amor fade-section" id="amor">
+  <div class="planet-container">
+    <div class="planet-visual">
+      <div class="small-planet small-planet--amor" style="--float-delay: -4s" aria-hidden="true">
+        <div class="planet-ring planet-ring--amor"></div>
+      </div>
+    </div>
+    <div class="planet-content">
+      <span class="planet-number">✦ Tercer Planeta</span>
+      <h2 class="planet-title planet-title--amor">Amor</h2>
+      <p class="planet-subtitle">"El amor no es lo que encuentras. Es lo que eres."</p>
+      
+      <div class="planet-description">
+        <p>
+          El amor no está afuera. No es algo que debas buscar, ganar o merecer. 
+          El amor es la sustancia misma de tu ser. Es la fuerza que mantiene unidos 
+          los átomos, que hace girar los planetas, que da vida a las estrellas.
+        </p>
+        <p>
+          Cierra los ojos. Coloca una mano sobre tu corazón. Siente ese calor. 
+          Esa es la presencia del amor infinito que eres. No depende de nadie. 
+          No necesita ser correspondido. Simplemente es. Y porque es, puedes darlo.
+        </p>
+        <p>
+          Visualiza ahora: de tu pecho emerge una luz rosa-dorada. Se expande suavemente. 
+          Primero te envuelve a ti — amor propio, el más sagrado de todos. Luego se extiende 
+          a quienes amas. Luego a quienes no conoces. Luego a todo el universo. 
+          No hay separación. Solo amor. Eres amor.
+        </p>
+        <p>
+          <em>"Yo soy amor. Doy amor. Recibo amor. El amor es mi naturaleza."</em>
+        </p>
+      </div>
+
+      <div class="audio-player" data-pillar="amor">
+        <button class="audio-btn audio-btn--amor" aria-label="Escuchar manifestación de amor">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </button>
+        <div class="audio-info">
+          <div class="audio-label">Audio de Manifestación</div>
+          <div class="audio-status">Toca para escuchar</div>
+          <div class="audio-progress">
+            <div class="audio-progress__bar audio-progress__bar--amor"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="journey-divider fade-section" aria-hidden="true">
+  <div class="journey-divider__icon"></div>
+  <span class="journey-divider__text">Encuentra la calma...</span>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     PLANET 4 — PAZ MENTAL
+     ═══════════════════════════════════════════ -->
+
+<section class="planet-section planet-section--paz fade-section" id="paz-mental">
+  <div class="planet-container">
+    <div class="planet-content">
+      <span class="planet-number">✦ Cuarto Planeta</span>
+      <h2 class="planet-title planet-title--paz">Paz Mental</h2>
+      <p class="planet-subtitle">"En medio del movimiento, encuentras el oasis."</p>
+      
+      <div class="planet-description">
+        <p>
+          Tu mente es como un océano. En la superficie, las olas van y vienen — 
+          pensamientos, preocupaciones, deseos. Pero en las profundidades, 
+          donde la luz del sol no llega, hay silencio absoluto. Quietud eterna.
+        </p>
+        <p>
+          No necesitas calmar las olas. Solo necesitas sumergirte más profundo. 
+          La paz no es la ausencia de pensamiento. Es la presencia de conciencia. 
+          Es saber que eres el observador, no el observado. El cielo, no la nube.
+        </p>
+        <p>
+          Visualiza ahora: estás flotando en un espacio infinito de luz violeta. 
+          No hay gravedad. No hay tiempo. Cada pensamiento que llega es una estrella 
+          que brilla un momento y luego se desvanece. Tú no eres la estrella. 
+          Eres el espacio que la contiene. Infinito. Silencioso. En paz.
+        </p>
+        <p>
+          <em>"Yo soy la paz que busco. Mi mente es mi santuario. Todo está bien."</em>
+        </p>
+      </div>
+
+      <div class="audio-player" data-pillar="paz">
+        <button class="audio-btn audio-btn--paz" aria-label="Escuchar manifestación de paz mental">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </button>
+        <div class="audio-info">
+          <div class="audio-label">Audio de Manifestación</div>
+          <div class="audio-status">Toca para escuchar</div>
+          <div class="audio-progress">
+            <div class="audio-progress__bar audio-progress__bar--paz"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="planet-visual">
+      <div class="small-planet small-planet--paz" style="--float-delay: -6s" aria-hidden="true">
+        <div class="planet-ring planet-ring--paz"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PLAN DE ACCIÓN
+     ═══════════════════════════════════════════ -->
+
+<section class="action-plan fade-section" id="plan-accion">
+  <h2 class="action-plan__title">Manifestar no es solo pedir</h2>
+  <p class="action-plan__subtitle">También toca moverse. La manifestación es co-creación: tú pones la intención, el universo pone el camino, y tus pies caminan.</p>
+  <div class="action-plan__grid">
+    <div class="action-plan__card">
+      <div class="action-plan__card-icon">🎯</div>
+      <h3 class="action-plan__card-title">Intención Clara</h3>
+      <p class="action-plan__card-desc">Define exactamente qué deseas. No pidas "más dinero", pide "libertad financiera para vivir mi propósito".</p>
+    </div>
+    <div class="action-plan__card">
+      <div class="action-plan__card-icon">🚀</div>
+      <h3 class="action-plan__card-title">Acción Inspirada</h3>
+      <p class="action-plan__card-desc">Da un paso cada día. La fe sin obras está muerta. La manifestación sin acción es solo un sueño.</p>
+    </div>
+    <div class="action-plan__card">
+      <div class="action-plan__card-icon">🔄</div>
+      <h3 class="action-plan__card-title">Soltar y Confiar</h3>
+      <p class="action-plan__card-desc">Haz tu parte y luego suelta. El apego al resultado bloquea la manifestación. Confía en el timing divino.</p>
+    </div>
+    <div class="action-plan__card">
+      <div class="action-plan__card-icon">🙏</div>
+      <h3 class="action-plan__card-title">Gratitud Activa</h3>
+      <p class="action-plan__card-desc">Agradece como si ya lo tuvieras. La gratitud es la frecuencia más alta de manifestación.</p>
+    </div>
+  </div>
+  <a href="#reto-21-dias" class="action-plan__cta">Comienza tu reto de 21 días →</a>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     RETO 21 DÍAS
+     ═══════════════════════════════════════════ -->
+
+<section class="challenge fade-section" id="reto-21-dias">
+  <h2 class="challenge__title">✦ Reto de 21 Días de Manifestación ✦</h2>
+  <p class="challenge__subtitle">21 días para transformar tu realidad. Cada día una acción pequeña pero poderosa: afirma, agradece, visualiza, ora y escribe.</p>
+  
+  <div class="challenge__grid" id="challengeGrid"></div>
+
+  <div class="challenge__progress">
+    <div class="challenge__progress-bar">
+      <div class="challenge__progress-fill" id="progressFill"></div>
+    </div>
+    <p class="challenge__progress-text" id="progressText">0 de 21 días completados</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     DIARIO DE PREGUNTAS
+     ═══════════════════════════════════════════ -->
+
+<section class="journal fade-section" id="diario">
+  <div class="journal__container">
+    <h2 class="journal__title">Diario de Manifestación</h2>
+    <p class="journal__subtitle">Tres preguntas diarias para alinear tu mente, tu corazón y tu acción.</p>
+    
+    <div class="journal__questions">
+      <div class="journal__card">
+        <div class="journal__card-icon">🌟</div>
+        <h3 class="journal__card-question">¿Qué deseo manifestar?</h3>
+        <p class="journal__card-prompt">Escribe con claridad lo que quieres atraer a tu vida. Sé específico. Siente ya la emoción de tenerlo.</p>
+        <textarea class="journal__card-textarea" placeholder="Hoy deseo manifestar..." rows="4"></textarea>
+      </div>
+      <div class="journal__card">
+        <div class="journal__card-icon">⚡</div>
+        <h3 class="journal__card-question">¿Qué acción tomaré hoy?</h3>
+        <p class="journal__card-prompt">La manifestación requiere movimiento. ¿Cuál es el paso concreto que darás hoy hacia tu sueño?</p>
+        <textarea class="journal__card-textarea" placeholder="La acción que tomaré hoy es..." rows="4"></textarea>
+      </div>
+      <div class="journal__card">
+        <div class="journal__card-icon">🕊️</div>
+        <h3 class="journal__card-question">¿Qué debo soltar?</h3>
+        <p class="journal__card-prompt">Para recibir lo nuevo, hay que soltar lo viejo. ¿Qué creencia, miedo o apego ya no te sirve?</p>
+        <textarea class="journal__card-textarea" placeholder="Hoy elijo soltar..." rows="4"></textarea>
+      </div>
+    </div>
+    <button class="journal__save-btn" id="journalSaveBtn">💾 Guardar mis respuestas</button>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     AFIRMACIONES POR ÁREA
+     ═══════════════════════════════════════════ -->
+
+<section class="affirmations fade-section" id="afirmaciones">
+  <h2 class="affirmations__title">Afirmaciones por Área</h2>
+  <p class="affirmations__subtitle">Declara en voz alta estas afirmaciones. Cada área tiene su vibración. Siéntelas. Créelas. Vive desde ellas.</p>
+  
+  <div class="affirmations__grid">
+    <div class="affirmation__card affirmation__card--amor-propio">
+      <span class="affirmation__area affirmation__area--amor-propio">✦ Amor Propio</span>
+      <p class="affirmation__text">"Soy suficiente tal como soy. Merezco amor, respeto y cuidado. Me elijo a mí primero."</p>
+      <button class="affirmation__audio-btn" data-affirmation="amor-propio">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Escuchar
+      </button>
+    </div>
+    <div class="affirmation__card affirmation__card--abundancia">
+      <span class="affirmation__area affirmation__area--abundancia">✦ Abundancia</span>
+      <p class="affirmation__text">"El universo es infinito y generoso. La abundancia fluye hacia mí en cada área de mi vida."</p>
+      <button class="affirmation__audio-btn" data-affirmation="abundancia">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Escuchar
+      </button>
+    </div>
+    <div class="affirmation__card affirmation__card--salud">
+      <span class="affirmation__area affirmation__area--salud">✦ Salud</span>
+      <p class="affirmation__text">"Cada célula de mi cuerpo vibra en salud perfecta. Soy vitalidad, energía y bienestar."</p>
+      <button class="affirmation__audio-btn" data-affirmation="salud">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Escuchar
+      </button>
+    </div>
+    <div class="affirmation__card affirmation__card--paz">
+      <span class="affirmation__area affirmation__area--paz">✦ Paz Mental</span>
+      <p class="affirmation__text">"Mi mente es un santuario de paz. Elijo pensamientos que me elevan y me liberan."</p>
+      <button class="affirmation__audio-btn" data-affirmation="paz">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Escuchar
+      </button>
+    </div>
+    <div class="affirmation__card affirmation__card--proposito">
+      <span class="affirmation__area affirmation__area--proposito">✦ Propósito</span>
+      <p class="affirmation__text">"Mi vida tiene un propósito único. Cada día camino más cerca de mi misión de vida."</p>
+      <button class="affirmation__audio-btn" data-affirmation="proposito">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Escuchar
+      </button>
+    </div>
+    <div class="affirmation__card affirmation__card--fe">
+      <span class="affirmation__area affirmation__area--fe">✦ Fe</span>
+      <p class="affirmation__text">"Confío en el plan divino. Todo lo que sucede es para mi bien y mi crecimiento."</p>
+      <button class="affirmation__audio-btn" data-affirmation="fe">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Escuchar
+      </button>
+    </div>
+    <div class="affirmation__card affirmation__card--disciplina">
+      <span class="affirmation__area affirmation__area--disciplina">✦ Disciplina</span>
+      <p class="affirmation__text">"Soy constante y disciplinado. Mis hábitos diarios construyen la vida que merezco."</p>
+      <button class="affirmation__audio-btn" data-affirmation="disciplina">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        Escuchar
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CARTA AL YO DEL FUTURO
+     ═══════════════════════════════════════════ -->
+
+<section class="future-letter fade-section" id="carta-futuro">
+  <div class="future-letter__container">
+    <div class="future-letter__icon">✉️</div>
+    <h2 class="future-letter__title">Carta a mi Yo del Futuro</h2>
+    <p class="future-letter__subtitle">
+      Escribe una carta a tu yo de 30 días a partir de hoy. ¿Qué logros celebras? ¿Cómo te sientes? 
+      ¿Qué cosas has soltado? ¿Qué sueños se están cumpliendo? Escribe con fe, como si ya hubiera ocurrido.
+    </p>
+    <div class="future-letter__prompts">
+      <div class="future-letter__prompt">💫 Hoy, {{fecha}}, le escribo a mi yo del futuro para recordarle lo lejos que hemos llegado...</div>
+      <div class="future-letter__prompt">🌟 Estoy orgullosa de haber superado: _______________</div>
+      <div class="future-letter__prompt">🔥 La versión de mí que estoy construyendo es: _______________</div>
+      <div class="future-letter__prompt">💖 El sueño que ya se manifestó es: _______________</div>
+    </div>
+    <textarea class="future-letter__textarea" id="cartaTexto" placeholder="Querido/a yo del futuro...
+
+Hoy es {{fecha_actual}} y te escribo con la certeza de que todo lo que sueño ya está en marcha. Para cuando leas esto, habrás crecido, sanado y manifestado...
+
+Con amor y gratitud,
+Tu yo del presente" rows="10"></textarea>
+    <div class="future-letter__actions">
+      <button class="future-letter__btn future-letter__btn--primary" id="guardarCarta">💾 Guardar Carta</button>
+      <button class="future-letter__btn future-letter__btn--secondary" id="descargarCarta">📥 Descargar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TIENDA / QR
+     ═══════════════════════════════════════════ -->
+
+<section class="store-section fade-section" id="tienda">
+  <div class="store-section__container">
+    <div class="store-section__info">
+      <h2 class="store-section__title">🛍️ Tienda Salvando Vidas</h2>
+      <p class="store-section__desc">
+        Todos los libros creados por la <strong>Dra. Raquel Alemán Sánchez</strong> bajo su marca 
+        <strong>Salvando Vidas</strong>. Herramientas de salud, transformación, bienestar y propósito.
+      </p>
+      
+      <div class="store-section__products">
+        <a href="https://us.amazon.com/C%C3%93DIGO-ABUNDANCIA-Mentalidad-prosperidad-transformar/dp/B0H2QGC1TY" target="_blank" rel="noopener noreferrer" class="store-section__product">
+          <span class="store-section__product-tag">Nuevo</span>
+          <strong>El CÓDIGO de la ABUNDANCIA</strong>
+          <span class="store-section__product-price">$28.99</span>
+          <span class="store-section__product-desc">Mentalidad, orden, disciplina y prosperidad</span>
+        </a>
+        <a href="https://us.amazon.com/NO-ESTAS-SOLO-necesitan-Spanish/dp/B0GVFM2W73" target="_blank" rel="noopener noreferrer" class="store-section__product">
+          <strong>NO ESTÁS SOLO</strong>
+          <span class="store-section__product-price">$26.99</span>
+          <span class="store-section__product-desc">Cómo salvar vidas y ser el apoyo que otros necesitan</span>
+        </a>
+        <a href="https://us.amazon.com/MAMA-TAMBIEN-SE-CANSA-emocional/dp/B0H2LLL3KX" target="_blank" rel="noopener noreferrer" class="store-section__product">
+          <strong>MAMÁ TAMBIÉN SE CANSA</strong>
+          <span class="store-section__product-price">$16.99</span>
+          <span class="store-section__product-desc">Guía emocional para madres cansadas de ser fuertes todo el tiempo</span>
+        </a>
+        <a href="https://us.amazon.com/Gu%C3%ADa-Movilidad-Articular-Pacientes-pacientes/dp/B0GYRSMK8N" target="_blank" rel="noopener noreferrer" class="store-section__product">
+          <strong>Guía de Movilidad Articular</strong>
+          <span class="store-section__product-price">$64.99</span>
+          <span class="store-section__product-desc">Manejo práctico para personas con movilidad reducida</span>
+        </a>
+        <a href="https://us.amazon.com/Gu%C3%ADa-Pr%C3%A1ctica-Rehabilitaci%C3%B3n-Card%C3%ADaca-Segura/dp/B0GXVDKX6L" target="_blank" rel="noopener noreferrer" class="store-section__product">
+          <strong>Rehabilitación Cardíaca Segura en Casa</strong>
+          <span class="store-section__product-price">$46.99</span>
+          <span class="store-section__product-desc">Guía completa para recuperarte seguro desde casa</span>
+        </a>
+      </div>
+      
+      <a href="https://us.amazon.com/Dra-RAQUEL-ALEMAN-SANCHEZ/e/B0GY9R6D5B" target="_blank" rel="noopener noreferrer" class="store-section__link">
+        🛒 Ver todos en Amazon →
+      </a>
+    </div>
+    <div class="store-section__qr">
+      <img src="qr-amazon.png" alt="Código QR para visitar la tienda de la Dra. Raquel Alemán Sánchez en Amazon" class="store-section__qr-img">
+      <span class="store-section__qr-label">Escanea para descubrir todos los libros y productos de la Dra. Raquel Alemán Sánchez en Amazon</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════ -->
+
+<footer class="footer fade-section" role="contentinfo">
+  <div class="footer__planet" aria-hidden="true"></div>
+  <div class="footer__stars" aria-hidden="true">✧ ✦ ✧ ✦ ✧</div>
+  <h2 class="footer__title">Gracias por viajar con nosotros</h2>
+  <p class="footer__text">
+    Que estos cuatro pilares — Abundancia, Salud, Amor y Paz Mental — 
+    te acompañen siempre en tu camino. La maravilla no está afuera. 
+    Está en ti.
+  </p>
+  <p class="footer__author">— Dr. Raquel Alemán Sánchez</p>
+  <p class="footer__credit">
+    Manifestaciones de Maravilla &copy; 2026 &bull; Hecho con amor y luz
+  </p>
+</footer>
+
+<!-- ═══════════════════════════════════════════
+     JAVASCRIPT
+     ═══════════════════════════════════════════ -->
+
+<script>
+(function() {
+  'use strict';
+
+  /* ─── Stars generation ─── */
+  const starsContainer = document.getElementById('stars');
+  if (starsContainer) {
+    const starCount = window.innerWidth < 768 ? 80 : 200;
+    for (let i = 0; i < starCount; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      const size = Math.random() * 3 + 1.5;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      star.style.left = Math.random() * 100 + '%';
+      star.style.top = Math.random() * 100 + '%';
+      star.style.setProperty('--duration', (Math.random() * 4 + 2) + 's');
+      star.style.setProperty('--delay', Math.random() * 5 + 's');
+      if (Math.random() > 0.7) {
+        star.style.boxShadow = '0 0 ' + (size * 2) + 'px var(--color-star)';
+      }
+      starsContainer.appendChild(star);
+    }
+
+    // Shooting stars
+    for (let i = 0; i < 4; i++) {
+      const ss = document.createElement('div');
+      ss.className = 'shooting-star';
+      const angle = Math.random() * 30 + 20;
+      const dist = Math.random() * 400 + 200;
+      ss.style.setProperty('--shoot-x', -Math.cos(angle * Math.PI / 180) * dist + 'px');
+      ss.style.setProperty('--shoot-y', Math.sin(angle * Math.PI / 180) * dist + 'px');
+      ss.style.setProperty('--shoot-duration', (Math.random() * 4 + 3) + 's');
+      ss.style.setProperty('--shoot-delay', (Math.random() * 8 + 2) + 's');
+      ss.style.top = Math.random() * 60 + 5 + '%';
+      ss.style.left = Math.random() * 60 + 20 + '%';
+      starsContainer.appendChild(ss);
+    }
+  }
+
+  /* ─── Theme toggle ─── */
+  const toggle = document.querySelector('[data-theme-toggle]');
+  const html = document.documentElement;
+  let theme = matchMedia('(prefers-color-scheme:dark)').matches ? 'dark' : 'light';
+  html.setAttribute('data-theme', theme);
+
+  if (toggle) {
+    toggle.addEventListener('click', function() {
+      theme = theme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', theme);
+      this.setAttribute('aria-label', 'Switch to ' + (theme === 'dark' ? 'light' : 'dark') + ' mode');
+      this.innerHTML = theme === 'dark'
+        ? '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>'
+        : '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>';
+    });
+  }
+
+  /* ─── Scroll reveal (Intersection Observer) ─── */
+  const fadeSections = document.querySelectorAll('.fade-section');
+  
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fade-section--visible');
+          // Also trigger planet background
+          entry.target.classList.add('planet-section--visible');
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+    fadeSections.forEach(el => observer.observe(el));
+  } else {
+    fadeSections.forEach(el => {
+      el.classList.add('fade-section--visible');
+      el.classList.add('planet-section--visible');
+    });
+  }
+
+  // Initialize visible for elements already in view
+  setTimeout(() => {
+    fadeSections.forEach(el => {
+      const rect = el.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight * 0.8;
+      if (isVisible) {
+        el.classList.add('fade-section--visible');
+        el.classList.add('planet-section--visible');
+      }
+    });
+  }, 100);
+
+  /* ─── Audio Player (Web Speech API) ─── */
+  const manifestations = {
+    abundancia: [
+      "Cierra los ojos. Respira profundo. Siente cómo el aire llena tus pulmones — ese es tu primer recordatorio de que la abundancia ya está aquí. No es algo que debas conseguir. Es algo que debes recordar.",
+      "Eres un ser infinito habitando un cuerpo finito. Así como las estrellas no preguntan si merecen brillar, tú no necesitas preguntar si mereces recibir. La abundancia es tu estado natural. El flujo del universo corre a través de ti.",
+      "Visualiza ahora: frente a ti, un río de luz dorada. Cada molécula de esa luz es una oportunidad, un recurso, una bendición. Bebe de ese río. Déjalo llenar cada célula de tu cuerpo. No hay escasez. Nunca la hubo.",
+      "Afirma conmigo: Yo soy abundancia. Yo recibo con gratitud. Yo fluyo con el universo."
+    ],
+    salud: [
+      "Siente tu corazón latir. No te pide permiso. No se detiene. Es la inteligencia perfecta de tu cuerpo trabajando por ti, para ti. Cada latido es un mantra, cada respiración una afirmación de vida.",
+      "La salud no es la ausencia de enfermedad. Es la presencia de vitalidad. Es la capacidad de despertar cada mañana y sentir la alegría de existir. Es la fuerza que fluye por cada músculo, cada hueso, cada órgano.",
+      "Visualiza ahora: una luz verde esmeralda que nace en el centro de tu pecho. Se expande lentamente. Recorre cada brazo, cada pierna, cada rincón de tu ser. Donde esta luz toca, la sanación ocurre. Las células se regeneran. La energía se renueva. Eres vida en movimiento.",
+      "Afirma conmigo: Mi cuerpo es perfecto en su sabiduría. La salud fluye en mí. Soy vitalidad."
+    ],
+    amor: [
+      "El amor no está afuera. No es algo que debas buscar, ganar o merecer. El amor es la sustancia misma de tu ser. Es la fuerza que mantiene unidos los átomos, que hace girar los planetas, que da vida a las estrellas.",
+      "Cierra los ojos. Coloca una mano sobre tu corazón. Siente ese calor. Esa es la presencia del amor infinito que eres. No depende de nadie. No necesita ser correspondido. Simplemente es. Y porque es, puedes darlo.",
+      "Visualiza ahora: de tu pecho emerge una luz rosa-dorada. Se expande suavemente. Primero te envuelve a ti — amor propio, el más sagrado de todos. Luego se extiende a quienes amas. Luego a quienes no conoces. Luego a todo el universo. No hay separación. Solo amor. Eres amor.",
+      "Afirma conmigo: Yo soy amor. Doy amor. Recibo amor. El amor es mi naturaleza."
+    ],
+    paz: [
+      "Tu mente es como un océano. En la superficie, las olas van y vienen — pensamientos, preocupaciones, deseos. Pero en las profundidades, donde la luz del sol no llega, hay silencio absoluto. Quietud eterna.",
+      "No necesitas calmar las olas. Solo necesitas sumergirte más profundo. La paz no es la ausencia de pensamiento. Es la presencia de conciencia. Es saber que eres el observador, no el observado. El cielo, no la nube.",
+      "Visualiza ahora: estás flotando en un espacio infinito de luz violeta. No hay gravedad. No hay tiempo. Cada pensamiento que llega es una estrella que brilla un momento y luego se desvanece. Tú no eres la estrella. Eres el espacio que la contiene. Infinito. Silencioso. En paz.",
+      "Afirma conmigo: Yo soy la paz que busco. Mi mente es mi santuario. Todo está bien."
+    ]
+  };
+
+  function getPillarKey(pillar) {
+    const map = { abundancia: 'abundancia', salud: 'salud', amor: 'amor', paz: 'paz' };
+    return map[pillar] || null;
+  }
+
+  const audioPlayers = document.querySelectorAll('.audio-player');
+  let activeSynth = null;
+  let activeBtn = null;
+  let activeBar = null;
+  let activeStatus = null;
+  let utteranceQueue = [];
+  let isSpeaking = false;
+  let currentUtteranceIndex = 0;
+  let progressInterval = null;
+
+  function stopSpeaking() {
+    if (activeSynth) {
+      window.speechSynthesis.cancel();
+      activeSynth = null;
+    }
+    if (activeBtn) {
+      activeBtn.classList.remove('playing');
+      activeBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>';
+      activeBtn = null;
+    }
+    if (activeBar) {
+      activeBar.style.width = '0%';
+      activeBar = null;
+    }
+    if (activeStatus) {
+      activeStatus.textContent = 'Toca para escuchar';
+      activeStatus = null;
+    }
+    if (progressInterval) {
+      clearInterval(progressInterval);
+      progressInterval = null;
+    }
+    isSpeaking = false;
+    utteranceQueue = [];
+    currentUtteranceIndex = 0;
+  }
+
+  function speakManifestation(pillar) {
+    stopSpeaking();
+
+    const key = getPillarKey(pillar);
+    if (!key || !manifestations[key]) return;
+
+    const lines = manifestations[key];
+    const player = document.querySelector(`.audio-player[data-pillar="${pillar}"]`);
+    if (!player) return;
+
+    const btn = player.querySelector('.audio-btn');
+    const status = player.querySelector('.audio-status');
+    const bar = player.querySelector('.audio-progress__bar');
+
+    if (!btn || !status || !bar) return;
+
+    // Check if speech synthesis is supported
+    if (!window.speechSynthesis) {
+      status.textContent = 'Audio no disponible en este navegador';
+      return;
+    }
+
+    activeBtn = btn;
+    activeBar = bar;
+    activeStatus = status;
+    activeSynth = window.speechSynthesis;
+    isSpeaking = true;
+    utteranceQueue = [...lines];
+    currentUtteranceIndex = 0;
+
+    btn.classList.add('playing');
+    btn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>';
+
+    // Progress animation
+    let progress = 0;
+    const totalDuration = lines.length * 12; // rough estimate: ~12s per line
+    progressInterval = setInterval(() => {
+      progress += 1;
+      const pct = Math.min(progress / totalDuration * 100, 95);
+      bar.style.width = pct + '%';
+    }, 100);
+
+    function speakNext() {
+      if (!isSpeaking || currentUtteranceIndex >= utteranceQueue.length) {
+        // Done
+        bar.style.width = '100%';
+        setTimeout(() => {
+          stopSpeaking();
+        }, 500);
+        return;
+      }
+
+      const text = utteranceQueue[currentUtteranceIndex];
+      status.textContent = `Escuchando... ${currentUtteranceIndex + 1} de ${utteranceQueue.length}`;
+
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'es-ES';
+      utterance.rate = 0.85;
+      utterance.pitch = 1.0;
+      utterance.volume = 1.0;
+
+      // Try to find a female Spanish voice
+      const voices = window.speechSynthesis.getVoices();
+      const spanishVoices = voices.filter(v => v.lang.startsWith('es'));
+      // Prefer female voices by name patterns
+      const femaleSpanishVoice = spanishVoices.find(v =>
+        /femenina|female|mujer|helena|sabina|maria|paulina|monica|rosa|ana|elena|laura|sofia|valentina|google\sespañol/i.test(v.name)
+      ) || spanishVoices.find(v =>
+        /femenin|female|helena|sabina|maria|monica|rosa|ana|elena/i.test(v.name)
+      ) || spanishVoices[0];
+      if (femaleSpanishVoice) {
+        utterance.voice = femaleSpanishVoice;
+      }
+
+      utterance.onend = function() {
+        currentUtteranceIndex++;
+        // Small pause between paragraphs
+        setTimeout(speakNext, 800);
+      };
+
+      utterance.onerror = function() {
+        currentUtteranceIndex++;
+        setTimeout(speakNext, 500);
+      };
+
+      window.speechSynthesis.speak(utterance);
+    }
+
+    // Chrome needs a small delay for voices to load
+    if (window.speechSynthesis.getVoices().length === 0) {
+      window.speechSynthesis.onvoiceschanged = () => {
+        window.speechSynthesis.onvoiceschanged = null;
+        speakNext();
+      };
+    } else {
+      speakNext();
+    }
+  }
+
+  audioPlayers.forEach(player => {
+    const btn = player.querySelector('.audio-btn');
+    if (!btn) return;
+
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const pillar = player.dataset.pillar;
+
+      // If clicking on the currently playing one, stop it
+      if (activeBtn === this && isSpeaking) {
+        stopSpeaking();
+        return;
+      }
+
+      speakManifestation(pillar);
+    });
+  });
+
+  /* ─── Handle page visibility — stop audio when hidden ─── */
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      stopSpeaking();
+    }
+  });
+
+  /* ═══════════════════════════════════════════
+     RETO 21 DÍAS
+     ═══════════════════════════════════════════ */
+
+  (function initChallenge() {
+    const grid = document.getElementById('challengeGrid');
+    const fill = document.getElementById('progressFill');
+    const text = document.getElementById('progressText');
+    if (!grid) return;
+
+    const days = [
+      { title: 'Intención', action: 'Escribe tu intención más profunda para los próximos 21 días.', icon: '🎯' },
+      { title: 'Gratitud', action: 'Escribe 5 cosas por las que agradeces profundamente.', icon: '🙏' },
+      { title: 'Afirmación', action: 'Repite 10 veces tu afirmación principal frente al espejo.', icon: '💬' },
+      { title: 'Visualización', action: 'Cierra los ojos 5 min y visualiza tu sueño cumplido.', icon: '👁️' },
+      { title: 'Acción', action: 'Da un paso concreto hacia tu meta, por pequeño que sea.', icon: '🚀' },
+      { title: 'Soltar', action: 'Escribe qué necesitas soltar y quema o rompe el papel.', icon: '🕊️' },
+      { title: 'Carta', action: 'Escribe una carta a tu yo del futuro agradeciendo lo logrado.', icon: '✉️' },
+      { title: 'Silencio', action: 'Pasa 10 minutos en silencio, escuchando tu interior.', icon: '🤫' },
+      { title: 'Naturaleza', action: 'Conecta con la naturaleza: camina, respira, observa.', icon: '🌿' },
+      { title: 'Lectura', action: 'Lee un pasaje inspirador y reflexiona sobre él.', icon: '📖' },
+      { title: 'Perdón', action: 'Perdona a alguien (o a ti misma) de corazón.', icon: '💖' },
+      { title: 'Generosidad', action: 'Da algo sin esperar nada a cambio.', icon: '🎁' },
+      { title: 'Cuerpo', action: 'Mueve tu cuerpo: baila, estira, camina con conciencia.', icon: '💃' },
+      { title: 'Luz', action: 'Enciende una vela y medita en su llama 5 minutos.', icon: '🕯️' },
+      { title: 'Frase', action: 'Crea tu frase de poder del día y repítela cada hora.', icon: '⚡' },
+      { title: 'Escritura', action: 'Escribe página y media de flujo de conciencia.', icon: '✍️' },
+      { title: 'Recordar', action: 'Recuerda un momento de abundancia y revive su emoción.', icon: '💭' },
+      { title: 'Desapego', action: 'Suelta el control sobre un resultado que te preocupa.', icon: '🎈' },
+      { title: 'Risa', action: 'Ve algo divertido y ríe a carcajadas. La risa es vibración alta.', icon: '😂' },
+      { title: 'Celebración', action: 'Celebra tu proceso. Reconoce cuánto has avanzado.', icon: '🎉' },
+      { title: 'Cierre', action: 'Escribe cómo te sientes al completar los 21 días. Celebra.', icon: '🌟' }
+    ];
+
+    const saved = JSON.parse(localStorage.getItem('reto21') || '[]');
+
+    function saveProgress(completed) {
+      localStorage.setItem('reto21', JSON.stringify(completed));
+      updateProgress(completed);
+    }
+
+    function updateProgress(completed) {
+      const total = days.length;
+      const done = completed.length;
+      const pct = total > 0 ? (done / total) * 100 : 0;
+      if (fill) fill.style.width = pct + '%';
+      if (text) text.textContent = done + ' de ' + total + ' días completados';
+    }
+
+    days.forEach((day, i) => {
+      const div = document.createElement('div');
+      div.className = 'challenge__day';
+      if (saved.includes(i)) div.classList.add('challenge__day--completed');
+
+      div.innerHTML =
+        '<div class="challenge__day-header">' +
+          '<span class="challenge__day-num">Día ' + (i + 1) + '</span>' +
+          '<span class="challenge__day-check">' + (saved.includes(i) ? '✓' : '') + '</span>' +
+        '</div>' +
+        '<div class="challenge__day-title">' +
+          '<span class="challenge__day-icon">' + day.icon + '</span> ' + day.title +
+        '</div>' +
+        '<div class="challenge__day-action">' + day.action + '</div>';
+
+      div.addEventListener('click', function() {
+        const completed = JSON.parse(localStorage.getItem('reto21') || '[]');
+        const idx = completed.indexOf(i);
+        if (idx > -1) {
+          completed.splice(idx, 1);
+          this.classList.remove('challenge__day--completed');
+          this.querySelector('.challenge__day-check').textContent = '';
+        } else {
+          completed.push(i);
+          completed.sort((a, b) => a - b);
+          this.classList.add('challenge__day--completed');
+          this.querySelector('.challenge__day-check').textContent = '✓';
+        }
+        saveProgress(completed);
+      });
+
+      grid.appendChild(div);
+    });
+
+    updateProgress(saved);
+  })();
+
+  /* ═══════════════════════════════════════════
+     DIARIO — GUARDAR RESPUESTAS
+     ═══════════════════════════════════════════ */
+
+  (function initJournal() {
+    const saveBtn = document.getElementById('journalSaveBtn');
+    if (!saveBtn) return;
+
+    const textareas = document.querySelectorAll('.journal__card-textarea');
+    const storageKey = 'journalDiario';
+
+    // Load saved answers
+    const saved = JSON.parse(localStorage.getItem(storageKey) || '{}');
+    textareas.forEach(ta => {
+      const key = ta.placeholder.replace(/[^a-zA-Záéíóúüñ ]/g, '').trim();
+      if (saved[key]) ta.value = saved[key];
+    });
+
+    saveBtn.addEventListener('click', function() {
+      const data = {};
+      textareas.forEach(ta => {
+        const key = ta.placeholder.replace(/[^a-zA-Záéíóúüñ ]/g, '').trim();
+        data[key] = ta.value;
+      });
+      localStorage.setItem(storageKey, JSON.stringify(data));
+
+      const today = new Date();
+      const dateStr = today.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+      this.textContent = '✅ Guardado el ' + dateStr;
+      setTimeout(() => {
+        this.textContent = '💾 Guardar mis respuestas';
+      }, 3000);
+    });
+  })();
+
+  /* ═══════════════════════════════════════════
+     AFIRMACIONES — AUDIO
+     ═══════════════════════════════════════════ */
+
+  (function initAffirmationAudio() {
+    const affirmations = {
+      'amor-propio': 'Soy suficiente tal como soy. Merezco amor, respeto y cuidado. Me elijo a mí primero, sin condiciones, sin excusas. Mi amor propio es mi mayor fortaleza. Desde ese amor, todo lo demás fluye.',
+      'abundancia': 'El universo es infinito y generoso. La abundancia fluye hacia mí en cada área de mi vida. Merezco recibir todo lo bueno que el universo tiene para mí. Mis manos están abiertas para dar y recibir.',
+      'salud': 'Cada célula de mi cuerpo vibra en salud perfecta. Soy vitalidad, energía y bienestar. Mi cuerpo es mi templo y lo honro con cuidado y amor. La sanación ocurre en mí ahora.',
+      'paz': 'Mi mente es un santuario de paz. Elijo pensamientos que me elevan y me liberan. En el silencio de mi ser encuentro la respuesta a todo. Estoy en calma, estoy completa, estoy en paz.',
+      'proposito': 'Mi vida tiene un propósito único e irrepetible. Cada día camino más cerca de mi misión de vida. Mis talentos son regalos que comparto con el mundo. Estoy exactamente donde debo estar.',
+      'fe': 'Confío en el plan divino. Todo lo que sucede es para mi bien y mi crecimiento. La fe es mi ancla en la tormenta y mi luz en la oscuridad. Me rindo al flujo perfecto de la vida.',
+      'disciplina': 'Soy constante y disciplinado. Mis hábitos diarios construyen la vida que merezco. La disciplina es el puente entre mis metas y mis logros. Cada día elijo la excelencia.'
+    };
+
+    const buttons = document.querySelectorAll('.affirmation__audio-btn');
+    let activeAffBtn = null;
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const key = this.dataset.affirmation;
+        const text = affirmations[key];
+        if (!text) return;
+
+        // If clicking the active one, stop
+        if (activeAffBtn === this && window.speechSynthesis.speaking) {
+          window.speechSynthesis.cancel();
+          this.classList.remove('playing');
+          this.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg> Escuchar';
+          activeAffBtn = null;
+          return;
+        }
+
+        // Stop any other affirmation audio
+        if (activeAffBtn) {
+          activeAffBtn.classList.remove('playing');
+          activeAffBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg> Escuchar';
+        }
+        // Also stop pillar audio
+        stopSpeaking();
+
+        this.classList.add('playing');
+        this.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg> Escuchando...';
+        activeAffBtn = this;
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'es-ES';
+        utterance.rate = 0.85;
+        utterance.pitch = 1.0;
+
+        const voices = window.speechSynthesis.getVoices();
+        const spanishVoices = voices.filter(v => v.lang.startsWith('es'));
+        const femaleVoice = spanishVoices.find(v =>
+          /femenina|female|mujer|helena|sabina|maria|monica|rosa|ana|elena|sofia|valentina/i.test(v.name)
+        ) || spanishVoices[0];
+        if (femaleVoice) utterance.voice = femaleVoice;
+
+        utterance.onend = function() {
+          if (activeAffBtn) {
+            activeAffBtn.classList.remove('playing');
+            activeAffBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg> Escuchar';
+            activeAffBtn = null;
+          }
+        };
+
+        utterance.onerror = function() {
+          if (activeAffBtn) {
+            activeAffBtn.classList.remove('playing');
+            activeAffBtn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg> Escuchar';
+            activeAffBtn = null;
+          }
+        };
+
+        window.speechSynthesis.speak(utterance);
+      });
+    });
+  })();
+
+  /* ═══════════════════════════════════════════
+     FLOATING QR TOGGLE
+     ═══════════════════════════════════════════ */
+
+  (function initFloatQr() {
+    const toggle = document.getElementById('floatQrToggle');
+    const content = document.getElementById('floatQrContent');
+    if (!toggle || !content) return;
+
+    toggle.addEventListener('click', function(e) {
+      e.stopPropagation();
+      const isOpen = content.classList.contains('float-qr__content--visible');
+      if (isOpen) {
+        content.classList.remove('float-qr__content--visible');
+        toggle.classList.remove('float-qr__toggle--active');
+      } else {
+        content.classList.add('float-qr__content--visible');
+        toggle.classList.add('float-qr__toggle--active');
+      }
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', function(e) {
+      const floatQr = document.getElementById('floatQr');
+      if (floatQr && !floatQr.contains(e.target)) {
+        content.classList.remove('float-qr__content--visible');
+        toggle.classList.remove('float-qr__toggle--active');
+      }
+    });
+  })();
+
+  /* ═══════════════════════════════════════════
+     CARTA AL YO DEL FUTURO
+     ═══════════════════════════════════════════ */
+
+  (function initFutureLetter() {
+    const textarea = document.getElementById('cartaTexto');
+    const saveBtn = document.getElementById('guardarCarta');
+    const downloadBtn = document.getElementById('descargarCarta');
+    if (!textarea) return;
+
+    const storageKey = 'cartaFuturo';
+
+    // Date substitution
+    const now = new Date();
+    const dateStr = now.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+    const futureDate = new Date(now);
+    futureDate.setDate(futureDate.getDate() + 30);
+    const futureStr = futureDate.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+
+    // Replace placeholders in prompts
+    document.querySelectorAll('.future-letter__prompt').forEach(el => {
+      el.textContent = el.textContent.replace('{{fecha}}', dateStr).replace('{{fecha_actual}}', dateStr);
+    });
+
+    // Replace in textarea too
+    textarea.placeholder = textarea.placeholder
+      .replace('{{fecha_actual}}', dateStr);
+
+    // Load saved
+    const saved = localStorage.getItem(storageKey);
+    if (saved) textarea.value = saved;
+
+    if (saveBtn) {
+      saveBtn.addEventListener('click', function() {
+        localStorage.setItem(storageKey, textarea.value);
+        const old = this.textContent;
+        this.textContent = '✅ Carta guardada';
+        setTimeout(() => { this.textContent = old; }, 3000);
+      });
+    }
+
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', function() {
+        const content = textarea.value || textarea.placeholder;
+        const letter = '═══════════════════════════════════\n' +
+                       '  CARTA A MI YO DEL FUTURO\n' +
+                       '  Fecha: ' + dateStr + '\n' +
+                       '  Para leer el: ' + futureStr + '\n' +
+                       '═══════════════════════════════════\n\n' +
+                       content +
+                       '\n\n═══════════════════════════════════\n' +
+                       '  Manifestaciones de Maravilla\n' +
+                       '  Dra. Raquel Alemán Sánchez\n' +
+                       '  SALVANDO VIDAS\n' +
+                       '═══════════════════════════════════';
+        const blob = new Blob([letter], { type: 'text/plain;charset=utf-8' });
+        const a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'carta-a-mi-yo-del-futuro-' + dateStr.replace(/\s+/g, '-') + '.txt';
+        a.click();
+        URL.revokeObjectURL(a.href);
+      });
+    }
+  })();
+
+})();
+</script>
+
+</body>
+</html>
